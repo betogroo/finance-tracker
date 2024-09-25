@@ -1,8 +1,10 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
+  <div class="container mx-auto max-w-4xl">
     <AppNavBar />
-    <slot />
+    <main class="mt-1">
+      <slot />
+    </main>
   </div>
 </template>

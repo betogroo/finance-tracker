@@ -3,8 +3,15 @@
 </script>
 
 <template>
-  <nav>
-    <ul class="flex space-x-2 justify-end mr-4">
+  <nav class="flex justify-between items-center bg-white h-8 shadow-sm px-2">
+    <h1>
+      <ULink
+        to="/"
+        class="text-xl"
+        >Finance Tracker</ULink
+      >
+    </h1>
+    <ul class="flex space-x-2 justify-end">
       <template
         v-for="(route, i) in navBarRoutes"
         :key="route.name"
