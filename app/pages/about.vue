@@ -1,4 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  definePageMeta({
+    showInNavBar: true,
+    requiresAuth: false,
+    title: 'About',
+    order: 1,
+  })
+</script>
 
 <template>
   <div>
