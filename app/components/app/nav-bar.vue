@@ -1,7 +1,9 @@
 <script setup lang="ts">
   const { navBarRoutes } = useNav()
-  const goToProfile = () => {
-    console.log('Go to profile')
+  const router = useRouter()
+  const goToProfile = (id: string) => {
+    router.push(`/profile/${id}`)
+    console.log('Go to profile', id)
   }
 </script>
 
@@ -38,7 +40,7 @@
         </template>
       </ul>
       <UAvatar
-        @click="goToProfile"
+        @click="goToProfile('kokokolollopopopo')"
         src="https://avatars.githubusercontent.com/u/739984?v=4"
         alt="Avatar"
         class="cursor-pointer"
